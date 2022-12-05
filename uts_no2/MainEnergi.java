@@ -5,29 +5,26 @@
 
 package uts_no2;
 
+import java.util.Scanner;
 /**
  *
  * @author yoan ockta pradana
  */
 
 public class MainEnergi {
-    MainEnergi me = new MainEnergi ();
-    scanner input = new scanner (source:System.in);
-    
-    System.out.print(s:"Masukkan kecepatan benda = ");
-    Double v = input.nextDouble();
-    me.setKecepatanBenda (KecepatanBenda:v);
-    System.out.println();
-    
-    System.out.print(s:"Masukkan Massa Benda =");
-    Double m = input.nextDouble();
-    me.setMassabenda(MassaBenda:M);
-    System.out.println();
-    
-    Double ek = 0.5 / me.getMassabenda()*me.KecepatanBenda
-            me.setEK(EK:EK);
-            
-    System.out.println("Jadi Hsilnya adalah "+ me.getEK())
-
+    public static void main(String[] args) {
+        MainKinetic massa = new MainKinetic();
+        MainKinetic kecepatan = new MainKinetic();
+        
+        System.out.println("Program Menghitung Energi Kinetik : ");
+        System.out.print("Masukkan massa benda : ");
+        Scanner masa = new Scanner(System.in);
+        massa.setMassa(masa.nextDouble());
+        
+        System.out.print("Masukkan kecepatan benda : ");
+        Scanner cepat = new Scanner(System.in);
+        kecepatan.setKecepatan(cepat.nextDouble());
+        
+        System.out.println("Maka Energi Kinetic nya adalah : " + 0.5 * massa.getMassa() * Math.pow(kecepatan.getKecepatan(), 2));
 }
 }

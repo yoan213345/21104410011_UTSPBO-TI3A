@@ -10,5 +10,22 @@ package uts_no2;
  * @author yoan ockta pradana
  */
 public class MainKinetic {
+    double massa;
+    double kecepatan;
 
+    public double getMassa() {
+        return massa;
+    }
+
+    public void setMassa(double massa) {
+        this.massa = massa;
+    }
+
+    public double getKecepatan() {
+        return kecepatan;
+    }
+
+    public void setKecepatan(double kecepatan) {
+        this.kecepatan = kecepatan;
+}
 }
